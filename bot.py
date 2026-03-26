@@ -171,7 +171,7 @@ async def handle_link(client: Client, message: Message):
 async def main():
     await bot.start()
     print("Bot started!")
-    await bot.idle()
+    await asyncio.Event().wait()
 
 
 if __name__ == "__main__":
